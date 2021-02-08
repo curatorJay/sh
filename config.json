@@ -1,0 +1,53 @@
+{
+    "keep-releases": 3,
+    "url": "http://dolores.local.shcc.nl",
+    "static" : "../../public/static/",
+    "version": "[version]",
+    "sass": {
+		"src": "../../_sources/css",
+		"dest": "../../public/static/[version]/css",
+        "entry": "*.scss"
+	},
+    "html": {
+        "src": "../../_sources/html",
+        "dest": "../../public/",
+        "template_data": {
+            "use_base_href": true,
+            "base_href": "/static/[version]/",
+            "tracking_gtag_ua": "",
+            "tracking_gtm_gtm": ""
+        }
+    },
+    "lang": {
+        "default_locale" : "en-gb",
+        "src": "../../_sources/lang",
+        "dest": "../../public/static/[version]/lang"    
+    },
+    "js": {
+        "src": "../../_sources/js",
+        "dest": "../../public/static/[version]/js",
+        "entry": "main.js",
+		"output": "main.bundle.js",
+		"alias": {
+			"underscore": "lodash"
+        }
+    },
+    "images": {
+        "src": "../../_sources/assets/img",
+        "dest": "../../_sources/assets/img/.optimized"
+    },
+    "assets": {
+        "src": "../../_sources/assets",
+        "dest": "../../public/static/[version]/assets",
+        "img_src": "../../_sources/assets/img/.optimized",
+        "img_dest": "../../public/static/[version]/assets/img"
+    },
+    "data": {
+        "src": "../../_sources/data",
+        "dest": "../../public/static/[version]/data"
+    },
+    "fonts": {
+        "src": "../../_sources/fonts",
+        "dest": "../../public/static/[version]/fonts"
+    }
+}

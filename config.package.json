@@ -1,0 +1,51 @@
+{
+    "static" : "../../_package/public/static/",
+    "version": "",
+    "sass": {
+		"src": "../../_sources/css",
+		"dest": "../../_package/public/static/css",
+        "entry": "*.scss"
+	},
+    "html": {
+        "src": "../../_sources/html",
+        "dest": "../../_package/public/",
+        "template_data": {
+            "use_base_href": false,
+            "base_href": "/static/[version]/",
+            "tracking_gtag_ua": "",
+            "tracking_gtm_gtm": ""
+        }
+    },
+    "lang": {
+        "default_locale" : "en-gb",
+        "src": "../../_sources/lang",
+        "dest": "../../_package/public/static/lang"    
+    },
+    "js": {
+        "src": "../../_sources/js",
+        "dest": "../../_package/public/static/js",
+        "entry": "main.js",
+		"output": "main.bundle.js",
+		"alias": {
+			"underscore": "lodash"
+		}
+    },
+    "images": {
+        "src": "../../_sources/assets/img",
+        "dest": "../../_sources/assets/img/.optimized"
+    },
+    "assets": {
+        "src": "../../_sources/assets",
+        "dest": "../../_package/public/static/assets",
+        "img_src": "../../_sources/assets/img/.optimized",
+        "img_dest": "../../_package/public/static/assets/img"
+    },
+    "data": {
+        "src": "../../_sources/data",
+        "dest": "../../_package/public/static/data"
+    },
+    "fonts": {
+        "src": "../../_sources/fonts",
+        "dest": "../../_package/public/static/fonts"
+    }
+}
